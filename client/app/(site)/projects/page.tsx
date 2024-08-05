@@ -1,0 +1,1 @@
+// displays all projects in a card/grid layout
