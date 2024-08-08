@@ -174,14 +174,15 @@ $tekhelet-light-500: #B596E5;
   width: 200px;
   margin-inline: auto;
   border-bottom-right-radius: 1.5rem;
+  margin-top: 1rem;
   // @apply   md:w-1/2 xl:w-1/2 ;
  }
  /**----------------------
   **      Font-Sizes
   *------------------------**/
   .responsive-logo-link{
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+    font-size: 1.5rem;
+    line-height: 1;
     font-weight: bolder;
     font-family: Sofia;
   }
@@ -204,18 +205,48 @@ $tekhelet-light-500: #B596E5;
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
-  .tech-h2{
+  .about-h2{
     font-size: 1.25rem;
     font-weight: 600;
     line-height: 2rem; 
   }
-  .tech-p{
+  .tech{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 20px 10px; 
+    grid-template-areas: 
+      ". ."
+      ".  ."
+      ". ."; 
+  }
+  .tech-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid $flame-light-500;
+    border-radius: 10px;
+    width: 6rem;
+    height: 6rem;
+    word-wrap: wrap;
+    padding: 10px;
+  }
+  .tech-name{
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5rem; 
+    margin-bottom: 1rem;
   }
-
-  /* text-xs	font-size: 0.75rem; 
+  .tech-lcon{
+    height: 4rem;
+    width: 4rem;
+    margin-top: 5px;
+  }
+  .tailwind-icon{
+    height: 2rem;
+  }
+  /* 
+  text-xs	font-size: 0.75rem; 
 line-height: 1rem; 
 text-sm	font-size: 0.875rem; 
 line-height: 1.25rem;
@@ -240,26 +271,32 @@ line-height: 1;
 text-8xl	font-size: 6rem; 
 line-height: 1;
 text-9xl	font-size: 8rem; 
-line-height: 1; */
+line-height: 1; 
+*/
 /**----------------------
  **      Media Screens
-
- //  sm	640px	@media (min-width: 640px) { ... } blackberry playbook 600
-//  md	768px	@media (min-width: 768px) { ... } ipad 768 kindle fire 800
-//  lg	1024px	@media (min-width: 1024px) { ... } ipad pro
-//  xl	1280px	@media (min-width: 1280px) { ... } nesthub max
-//  2xl	1536px	@media  vivobook 1920
  *------------------------**/
 @media screen and (min-width: 600px) {
-  // .my-image{
-  //   width: 16rem;
-  // }
+  .responive-logo-link{
+    font-size: 5rem !important;
+    line-height: 1;
+  } 
+  .tech{
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    grid-template-areas: 
+      ". . ."
+      ". . ."; 
+  }
+  .tech-container{
+    width: 8rem;
+    height: 8rem;
+  }
 } //blackberry playbook  sm
 @media screen and (min-width: 768px) {
   .responive-logo-link{
-    font-size: 4.5rem;
-    line-height: 1;
-  }
+    font-size: 5rem !important;
+  } //font size not changing 
   .header-links{
     font-size: 3rem;
     line-height: 1;
@@ -281,13 +318,33 @@ line-height: 1; */
   .links-container{
     gap: 1.5rem;
   }
+  .tech{
+    grid-template-columns: 1fr 1fr 1fr 1fr;  
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+      ". . . ."
+      ". . . ."; 
+  }
+  .tech-container{
+    width: 10rem;
+    height: 10rem;
+    word-wrap: wrap;
+    padding: 15px 20px;
+  }
+  .tech-name{
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.75rem; 
+  }
+  .tech-lcon{
+    margin-top: 1rem;
+  }
 } //ipad md
 @media screen and (min-width: 1024px) {
   //lg
   .responive-logo-link{
-    font-size: 4.5rem;
-    line-height: 1;
-  }
+    font-size: 5rem !important;
+  } 
   .header-links{
     font-size: 3rem;
     line-height: 1;
@@ -318,11 +375,29 @@ line-height: 1; */
   }
 } //ipad pro lg
 @media screen and (min-width: 1280px) {
+  .responive-logo-link{
+    font-size: 5rem !important;
+  } 
   .my-image{
     right: -8rem !important;
   }
+  .tech{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 20px 20px; 
+    grid-template-areas: 
+      ". . . . . ."
+      ". . . . . ."; 
+  }
+  .tech-Icon{
+    vertical-align: middle !important;
+  }
 } // nesthub max xl
 @media screen and (min-width: 1536px) {
+  .responive-logo-link{
+    font-size: 5rem !important;
+  } 
   .xpadding{
     margin-inline: 8rem;
   }

@@ -47,19 +47,22 @@ const skill = {
             title: 'URL',
             type: 'url',
         },
-        //last used date
-        {
-            name: 'last_used',
-            title: 'Last_Used',
-            type: 'date'
-        },
         // content for the skill
         {
             name: 'content',
             title: 'Content',
             type: 'array',
             of: [{type: 'block'}],
-        }
+        },
+        //last used date
+        {
+            name: 'last_used',
+            title: 'Last_Used',
+            type: 'date',
+            options: {
+                dateFormat: 'MM-DD-YYYY',
+              }
+        },
     ]
 }
 

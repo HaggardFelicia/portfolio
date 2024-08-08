@@ -5,9 +5,7 @@
 /**----------------------
  **      Text
  *------------------------**/
- *{
-  @apply text-base;
- }
+
 .responsive-logo-link{
   @apply    bg-gradient-to-tl from-tekhelet-dark-500  via-tekhelet-dark-200 to-tekhelet-light-300 bg-clip-text text-transparent;
 }

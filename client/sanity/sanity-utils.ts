@@ -91,7 +91,7 @@ export async function getSkills(): Promise<Skill[]>{
             url, 
             content,
             "alt" : image.alt,
-            last_used
+            last_used,
         }`
     )    
 };
