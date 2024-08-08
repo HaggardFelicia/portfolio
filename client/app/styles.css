@@ -1,4 +1,128 @@
-@tailwind base;
+/* @media screen and (min-width: 600px) {
+  .responive-logo-link{
+    font-size: 5rem !important;
+    line-height: 5.25rem !important;
+  } 
+  .tech{
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    grid-template-areas: 
+      ". . ."
+      ". . ."; 
+  }
+  .tech-container{
+    width: 8rem;
+    height: 8rem;
+  }
+} /*blackberry playbook  sm*/
+/* @media screen and (min-width: 768px) {
+  .header-links{
+    font-size: 2rem;
+    line-height: 1;
+  }
+  .responsive-special-text{
+    font-size: 2rem;
+    line-height: 1;
+  }
+  .responive-heading-text{
+    font-size: 2rem;
+    line-height: 1;
+  }
+  .welcome{
+    display: block;
+  }
+  .my-image{
+    width: 70%;
+  } 
+  .links-container{
+    gap: 1.5rem;
+  }
+  .tech{
+    grid-template-columns: 1fr 1fr 1fr 1fr;  
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+      ". . . ."
+      ". . . ."; 
+  }
+  .tech-container{
+    width: 10rem;
+    height: 10rem;
+    word-wrap: wrap;
+    padding: 15px 20px;
+  }
+  .tech-name{
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.75rem; 
+  }
+  .tech-lcon{
+    margin-top: 1rem;
+  }
+} /*ipad md*/
+/* @media screen and (min-width: 1024px) {
+  
+  .header-links{
+    font-size: 3rem;
+    line-height: 1;
+  }
+  .responsive-special-text{
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+  .responive-heading-text{
+    font-size: 3rem;
+    line-height: 1;
+  }
+  .xpadding{
+    padding-inline: 10rem;
+  }
+  .welcome{
+    display: flex;
+    text-align: left;
+  }
+  .my-image{
+    width: 300px;
+    border-bottom-right-radius: 3rem;
+    position: relative;
+    right: -2rem;
+  }
+  .links-container{
+    gap: 2rem;
+  }
+} ipad pro lg */
+/* @media screen and (min-width: 1280px) {
+  .my-image{
+    right: -8rem !important;
+  }
+  .tech{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 20px 20px; 
+    grid-template-areas: 
+      ". . . . . ."
+      ". . . . . ."; 
+  }
+  .tech-Icon{
+    vertical-align: middle !important;
+  }
+} nesthub max xl */
+/* @media screen and (min-width: 1536px) {
+  .xpadding{
+    margin-inline: 8rem;
+  }
+  .welcome{
+    .responive-heading-text{
+      font-size: xx-large;
+    }
+  }
+  .my-image{
+    right: -18rem !important;
+    width: 30rem !important;
+  }
+}vivobook 2xl */
+
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -40,33 +164,32 @@ line-height: 1;
 text-9xl	font-size: 8rem; 
 line-height: 1;
   *------------------------**/
-@import url('./fonts/stylesheet.css');
+/* @import url('./fonts/stylesheet.css');
 
 :root{
   @apply bg-flame-light-100 m-0 p-0 text-tekhelet-dark-100 font-Dosis font-normal;
 }
 ::-webkit-scrollbar{
   @apply w-2 bg-tekhelet-dark-100;
-    /* width: 10px; */
   }
 ::-webkit-scrollbar-thumb{
   @apply bg-flame-light-300 rounded-full;
 }
 .responsive-page{
   @apply min-h-full flex flex-col;
-}
+} */
 
 /**----------------------
  **      Header
  *------------------------**/
- .header{
+ /* .header{
   @apply flex justify-between;
- }
+ } */
 
  /**----------------------
   **      Footer
   *------------------------**/
-.footer{
+/* .footer{
   @apply bg-tekhelet-light-300 text-flame-light-500 bottom-0 w-full items-center justify-center text-center font-Nunito-italic text-sm; 
 
     padding-block: 1.5rem;
@@ -79,12 +202,12 @@ line-height: 1;
   @apply text-flame-light-500 items-center justify-center aspect-square;
     gap: 1.25rem;
     height: 1.5rem;
-}
+} */
 
 /**----------------------
  **      Containers
  *------------------------**/
-.links-container{
+/* .links-container{
   @apply flex items-center relative top-1;
     gap: .5rem;
 }
@@ -98,27 +221,33 @@ line-height: 1;
   @apply justify-center flex;
       margin-block: 1.25rem;
       gap: 1.25rem;
-}
+} */
 
 /**----------------------
  **      landing
  *------------------------**/
- .welcome{
+ /* .welcome{
   @apply block items-center text-center my-[auto] w-full;
   margin-bottom: 5rem;
-  /* @apply  lg:w-2/3 lg:flex;*/
  }
  .my-image{
   @apply w-[200px] my-[auto] mt-[1rem];
   border-bottom-right-radius: 1.5rem;
-  /* @apply   md:w-1/2 xl:w-1/2 ;*/
- }
+ } */
 
    /**----------------------
  **      Text
  *------------------------**/
 
-
+/* .responsive-logo{
+  @apply    bg-gradient-to-tl from-tekhelet-dark-500  via-tekhelet-dark-200 to-tekhelet-light-300 bg-clip-text  text-2xl text-transparent font-bold font-Sofia;
+}
+.header-links{
+  @apply bg-gradient-to-tl from-tekhelet-dark-500  via-tekhelet-dark-200 to-tekhelet-light-300  bg-clip-text font-bold text-xl text-transparent;  
+}
+.responsive-special-text{
+  @apply bg-gradient-to-tl from-tekhelet-dark-500  via-tekhelet-dark-200 to-tekhelet-light-300   bg-clip-text text-2xl text-transparent font-bold;
+} */
   /* 
   text-xs	font-size: 0.75rem; 
 line-height: 1rem; 
@@ -156,6 +285,9 @@ line-height: 1;
       color: flame-light-500 !important;
   } */
 
+  /* .responive-heading-text{
+    @apply text-xl;
+  }
   .about-h2{
     @apply text-xl font-semibold;
   }
@@ -185,4 +317,4 @@ line-height: 1;
   }
   .tailwind-icon{
     height: 2rem;
-  }
+  }  */

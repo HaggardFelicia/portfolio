@@ -9,7 +9,7 @@ export default async function PageHeader() {
   return (    
     <header className="header xpadding ypadding">
           {/* header logo that takes you to home page */}
-          <Link href="/" className="responsive-logo-link">Felicia</Link>
+          <Link href="/" className="responsive-logo">Felicia</Link>
 
           {/* mapping over the pages */}
           <div className="links-container">

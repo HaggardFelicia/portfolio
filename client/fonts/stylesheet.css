@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  @font-face {
+    font-family: Dosis;
+    src: url(./Dosis-VariableFont_wght.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: 'Nunito-italic';
+    src: url(./Nunito-Italic-VariableFont_wght.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: Nunito;
+    src: url(./Nunito-VariableFont_wght.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: Sofia;
+    src: url(./Sofia-Regular.ttf) format("truetype");
+  }
+}

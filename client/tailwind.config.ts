@@ -41,8 +41,17 @@ const config: Config = {
         500: '#B596E5',
       }
     },
-
+    fontFamily:{
+      "Dosis": ["Dosis", "sans-serif"],
+      "Nunito":["Nunito", "sans-serif"],
+      "Nunito-italic": ["Nunito-italic", "sans-serif"],
+      "Sofia":["Sofia","cursive"]
+    }
   },
   plugins: [],
 };
 export default config;
+// @font-face {
+//   font-family: Sofia;
+//   src: url(../fonts/Sofia-Regular.ttf) format(truetype);
+// }

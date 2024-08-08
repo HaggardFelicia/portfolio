@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import "../globals.css";
 import PageHeader from "../components/header";
 import PageFooter from "../components/footer";
-import '../globals.scss'
-
 
 // metadata for the site
 export const metadata: Metadata = {
