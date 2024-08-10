@@ -46,6 +46,15 @@ const config: Config = {
       "Nunito":["Nunito", "sans-serif"],
       "Nunito-italic": ["Nunito-italic", "sans-serif"],
       "Sofia":["Sofia","cursive"]
+    },
+    screens:{
+      'xs': '320px',
+      'sm': '640px',
+      'md':'768px',
+      'lg':'1024px',
+      'xl':'1280px',
+      '2xl':'1536px',
+      '3xl': '1920px'
     }
   },
   plugins: [],

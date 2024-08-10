@@ -8,53 +8,29 @@
  * @email       :  haggardwebdev@gmail.com
  * @repo        :  haggardfelicia
  * @createdOn   :  08/05/2024
- * @description :  scss for my portfolio. fonts are declared below.
+ * @description :  Tailwind CSS for my portfolio. fonts are declared below.
  *---------------------------------------------**/
 
- /**----------------------
+/**----------------------
   **      Fonts
-  text-xs	font-size: 0.75rem; 
-line-height: 1rem; 
-text-sm	font-size: 0.875rem; 
-line-height: 1.25rem;
-text-base	font-size: 1rem; 
-line-height: 1.5rem; 
-text-lg	font-size: 1.125rem; 
-line-height: 1.75rem;
-text-xl	font-size: 1.25rem; 
-line-height: 1.75rem; 
-text-2xl	font-size: 1.5rem; 
-line-height: 2rem; 
-text-3xl	font-size: 1.875rem; 
-line-height: 2.25rem; 
-text-4xl	font-size: 2.25rem; 
-line-height: 2.5rem; 
-text-5xl	font-size: 3rem; 
-line-height: 1;
-text-6xl	font-size: 3.75rem;
-line-height: 1;
-text-7xl	font-size: 4.5rem;
-line-height: 1;
-text-8xl	font-size: 6rem; 
-line-height: 1;
-text-9xl	font-size: 8rem; 
-line-height: 1;
   *------------------------**/
-@import url('./fonts/stylesheet.css');
+  @import url('../fonts/stylesheet.css');
 
-:root{
-  @apply bg-flame-light-100 m-0 p-0 text-tekhelet-dark-100 font-Dosis font-normal;
-}
-::-webkit-scrollbar{
-  @apply w-2 bg-tekhelet-dark-100;
-    /* width: 10px; */
+  /**----------------------
+   **      Main/Root/Scrollbar
+   *------------------------**/
+  :root{
+    @apply bg-flame-light-100 m-0 p-0 text-tekhelet-dark-100 font-Dosis font-normal;
   }
-::-webkit-scrollbar-thumb{
-  @apply bg-flame-light-300 rounded-full;
-}
-.responsive-page{
-  @apply min-h-full flex flex-col;
-}
+  ::-webkit-scrollbar{
+    @apply w-2 bg-tekhelet-dark-100;
+    }
+  ::-webkit-scrollbar-thumb{
+    @apply bg-flame-light-300 rounded-full;
+  }
+  .responsive-page{
+    @apply min-h-full flex flex-col ;
+  } 
 
 /**----------------------
  **      Header
@@ -62,127 +38,116 @@ line-height: 1;
  .header{
   @apply flex justify-between;
  }
-
- /**----------------------
-  **      Footer
-  *------------------------**/
-.footer{
-  @apply bg-tekhelet-light-300 text-flame-light-500 bottom-0 w-full items-center justify-center text-center font-Nunito-italic text-sm; 
-
-    padding-block: 1.5rem;
-    height: 22vh;
-    margin-top: auto;
-    font-family: Nunito-italic;
-    letter-spacing: -1px;
+.links-container{
+  @apply flex items-center relative top-1 gap-2 sm:gap-5 2xl:gap-8;
 }
-.footer-links{
-  @apply text-flame-light-500 items-center justify-center aspect-square;
-    gap: 1.25rem;
-    height: 1.5rem;
+.header-links:hover{
+  @apply underline underline-offset-[10px] text-flame-light-500 decoration-tekhelet-dark-300;
 }
 
 /**----------------------
- **      Containers
- *------------------------**/
-.links-container{
-  @apply flex items-center relative top-1;
-    gap: .5rem;
+  **      Footer
+  *------------------------**/
+.footer{
+  @apply bg-tekhelet-light-300 text-flame-light-500 bottom-0 w-full items-center justify-center text-center font-Nunito-italic text-sm py-6 mt-[auto] h-[22vh] tracking-tighter; 
 }
-.xpadding{
-    padding-inline: 3rem;
-}
-.ypadding{
-    padding-block: 2.5rem;
+.footer-links{
+  @apply text-flame-light-500 items-center justify-center aspect-square gap-5 h-6;
 }
 .footer-links-container{
-  @apply justify-center flex;
-      margin-block: 1.25rem;
-      gap: 1.25rem;
+  @apply justify-center flex my-5 gap-5;
+      /* gap: 1.25rem; */
+}
+
+/**----------------------
+ **      x&y Padding
+ *------------------------**/
+.xpadding{
+  @apply w-[250px] mx-[auto] sm:w-[472px] md:w-[600px] lg:w-[856px] xl:w-[950px]  2xl:w-[1200px]  3xl:w-[1500px];
+}
+.ypadding{
+  @apply py-10;
 }
 
 /**----------------------
  **      landing
  *------------------------**/
  .welcome{
-  @apply block items-center text-center my-[auto] w-full;
-  margin-bottom: 5rem;
-  /* @apply  lg:w-2/3 lg:flex;*/
+  @apply block items-center text-center my-[auto] w-full mb-20 md:block mx-[auto] justify-center lg:flex;
  }
  .my-image{
-  @apply w-[200px] my-[auto] mt-[1rem];
-  border-bottom-right-radius: 1.5rem;
-  /* @apply   md:w-1/2 xl:w-1/2 ;*/
+  @apply w-[200px]  my-4 lg:mb-14 rounded-br-2xl  relative mx-[auto] md:w-7/12 xl:w-1/2 2xl:-right-20;
  }
 
-   /**----------------------
+/**----------------------
  **      Text
  *------------------------**/
+.responsive-logo{
+  @apply    bg-gradient-to-tl from-tekhelet-dark-500  via-tekhelet-dark-200 to-tekhelet-light-300 bg-clip-text  text-2xl text-transparent font-bold font-Sofia sm:text-3xl md:text-4xl xl:text-8xl;
+}
+.header-links{
+  @apply bg-gradient-to-tl from-tekhelet-dark-500  via-tekhelet-dark-200 to-tekhelet-light-300  bg-clip-text font-bold text-xl text-transparent sm:text-2xl md:text-3xl xl:text-5xl;  
+}
+.responsive-special-text{
+  @apply bg-gradient-to-tl from-tekhelet-dark-500  via-tekhelet-dark-200 to-tekhelet-light-300   bg-clip-text text-2xl text-transparent font-bold sm:text-3xl md:text-4xl xl:text-6xl;
+}
+.responive-heading-text{
+  @apply text-xl md:text-3xl font-medium xl:text-5xl;
+}
 
-
-  /* 
-  text-xs	font-size: 0.75rem; 
-line-height: 1rem; 
-text-sm	font-size: 0.875rem; 
-line-height: 1.25rem;
-text-base	font-size: 1rem; 
-line-height: 1.5rem; 
-text-lg	font-size: 1.125rem; 
-line-height: 1.75rem;
-text-xl	font-size: 1.25rem; 
-line-height: 1.75rem; 
-text-2xl	font-size: 1.5rem; 
-line-height: 2rem; 
-text-3xl	font-size: 1.875rem; 
-line-height: 2.25rem; 
-text-4xl	font-size: 2.25rem; 
-line-height: 2.5rem; 
-text-5xl	font-size: 3rem; 
-line-height: 1;
-text-6xl	font-size: 3.75rem;
-line-height: 1;
-text-7xl	font-size: 4.5rem;
-line-height: 1;
-text-8xl	font-size: 6rem; 
-line-height: 1;
-text-9xl	font-size: 8rem; 
-line-height: 1; 
-*/
- /**----------------------
-  **      Font-Sizes
+/**----------------------
+  **      About Section
   *------------------------**/
-  /* .header-links:hover{
-    text-decoration: underline !important;
-      text-underline-offset: 10px !important;
-      color: flame-light-500 !important;
-  } */
-
   .about-h2{
     @apply text-xl font-semibold;
   }
+
+  /**----------------------
+  **      Tech
+  *------------------------**/
   .tech{
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
-    gap: 20px 10px; 
-    grid-template-areas: 
-      ". ."
-      ".  ."
-      ". ."; 
+    @apply grid grid-cols-2 grid-rows-3 gap-y-2 gap-x-1 mx-[8vw]   sm:grid-cols-3 sm:grid-rows-2 ;
   }
   .tech-container{
-    @apply flex flex-col items-center w-[6rem] h-[6rem] border-2 border-solid border-flame-light-500 rounded-md text-wrap p-[10px];
+    @apply flex flex-col items-center w-[6.5rem] h-[6.5rem] border-2 border-solid border-flame-light-500 rounded-md text-wrap p-2.5 sm:w-32 sm:h-32;
   }
   .tech-name{
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5rem; 
-    margin-bottom: 1rem;
+    @apply text-lg font-normal mb-2 leading-5;
   }
   .tech-lcon{
-    height: 4rem;
-    width: 4rem;
-    margin-top: 5px;
+    @apply h-24 w-24 mt-2;
   }
   .tailwind-icon{
-    height: 2rem;
-  }
+    @apply h-6;
+  } 
+
+  /**----------------------
+   **      School
+   *------------------------**/
+
+
+/**----------------------
+  **      Media Screens
+  *------------------------**/
+   @media screen and (min-width: 640px) {
+    /* .tech{
+      @apply ml-[15vw] mr-[35vw];
+    } */
+    /* .xpadding{
+      @apply ml-[3rem];
+    } */
+   }
+   @media screen and (min-width: 768px) {
+
+   }
+   @media screen and (min-width: 1024px) {
+     
+   }
+   @media screen and (min-width: 1280px) {
+     /* .my-image{
+      @apply w-1/2;
+     } */
+   }
+   @media screen and (min-width: 1536px) {
+
+   }

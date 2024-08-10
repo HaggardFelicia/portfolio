@@ -3,12 +3,6 @@ import React from 'react'
 import { FaGithubAlt } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa6";
-import { SiIndeed } from "react-icons/si";
-import { SiGlassdoor } from "react-icons/si";
-import { FaLink } from "react-icons/fa";
-import { SiGmail } from "react-icons/si";
-import { FaPhone } from "react-icons/fa6";
-
 
 export default function PageFooter() {
   return (
