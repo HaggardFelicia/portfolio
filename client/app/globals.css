@@ -20,7 +20,7 @@
    **      Main/Root/Scrollbar
    *------------------------**/
   :root{
-    @apply bg-flame-light-100 m-0 p-0 text-tekhelet-dark-100 font-Dosis font-normal;
+    @apply bg-flame-light-100 m-0 p-0 w-full text-tekhelet-dark-100 font-Dosis font-normal;
   }
   ::-webkit-scrollbar{
     @apply w-2 bg-tekhelet-dark-100;
@@ -29,7 +29,7 @@
     @apply bg-flame-light-300 rounded-full;
   }
   .responsive-page{
-    @apply min-h-full flex flex-col ;
+    @apply min-h-full flex flex-col m-0 w-full;
   } 
 
 /**----------------------
@@ -39,20 +39,20 @@
   @apply flex justify-between;
  }
 .links-container{
-  @apply flex items-center relative top-1 gap-2 sm:gap-5 2xl:gap-8;
+  @apply flex items-center fixed gap-2 sm:gap-5 2xl:gap-8 right-8 top-10 sm:right-20 xl:right-36 3xl:right-48 4xl:right-64 z-50 px-4 py-1 rounded-full bg-flame-light-100 shadow-inset shadow-flame-dark-100;
 }
 .header-links:hover{
-  @apply underline underline-offset-[10px] text-flame-light-500 decoration-tekhelet-dark-300;
+  @apply text-flame-light-500 ;
 }
 
 /**----------------------
   **      Footer
   *------------------------**/
 .footer{
-  @apply bg-tekhelet-light-300 text-flame-light-500 bottom-0 w-full items-center justify-center text-center font-Nunito-italic text-sm py-6 mt-[auto] h-[22vh] tracking-tighter; 
+  @apply bg-tekhelet-light-300 text-flame-light-500 bottom-0 w-full items-center justify-center text-center font-Nunito-italic text-sm py-6 mt-[auto] h-28 tracking-tighter; 
 }
 .footer-links{
-  @apply text-flame-light-500 items-center justify-center aspect-square gap-5 h-6;
+  @apply text-flame-dark-200 items-center justify-center aspect-square gap-5 h-6;
 }
 .footer-links-container{
   @apply justify-center flex my-5 gap-5;
@@ -63,7 +63,7 @@
  **      x&y Padding
  *------------------------**/
 .xpadding{
-  @apply w-[250px] mx-[auto] sm:w-[472px] md:w-[600px] lg:w-[856px] xl:w-[950px]  2xl:w-[1200px]  3xl:w-[1500px];
+  @apply w-[250px] mx-[auto] sm:w-[472px] md:w-[600px] lg:w-[856px] xl:w-[1050px]  2xl:w-[1200px]  3xl:w-[1500px] 5xl:w-[2000px] 6xl:w-[2300px] 7xl:w-[4400px];
 }
 .ypadding{
   @apply py-10;
@@ -76,40 +76,40 @@
   @apply block items-center text-center my-[auto] w-full mb-20 md:block mx-[auto] justify-center lg:flex;
  }
  .my-image{
-  @apply w-[200px]  my-4 lg:mb-14 rounded-br-2xl  relative mx-[auto] md:w-7/12 xl:w-1/2 2xl:-right-20;
+  @apply w-[200px]  my-4 lg:mb-14 rounded-br-2xl  relative mx-[auto] md:w-7/12 lg:w-1/3 2xl:-right-20;
  }
 
 /**----------------------
  **      Text
  *------------------------**/
 .responsive-logo{
-  @apply    bg-gradient-to-tl from-tekhelet-dark-500  via-tekhelet-dark-200 to-tekhelet-light-300 bg-clip-text  text-2xl text-transparent font-bold font-Sofia sm:text-3xl md:text-4xl xl:text-8xl;
+  @apply    bg-gradient-to-tl from-tekhelet-dark-500  via-tekhelet-dark-200 to-tekhelet-light-300 bg-clip-text  text-lg text-transparent font-bold font-Sofia sm:text-2xl md:text-3xl xl:text-5xl;
 }
 .header-links{
-  @apply bg-gradient-to-tl from-tekhelet-dark-500  via-tekhelet-dark-200 to-tekhelet-light-300  bg-clip-text font-bold text-xl text-transparent sm:text-2xl md:text-3xl xl:text-5xl;  
+  @apply bg-gradient-to-l from-tekhelet-dark-300  via-flame-light-500 to-flame-dark-300 bg-clip-text font-bold text-base text-transparent sm:text-lg md:text-xl xl:text-3xl;  
 }
 .responsive-special-text{
-  @apply bg-gradient-to-tl from-tekhelet-dark-500  via-tekhelet-dark-200 to-tekhelet-light-300   bg-clip-text text-2xl text-transparent font-bold sm:text-3xl md:text-4xl xl:text-6xl;
+  @apply bg-gradient-to-tl from-tekhelet-dark-500  via-tekhelet-dark-200 to-tekhelet-light-300   bg-clip-text text-lg text-transparent font-bold sm:text-xl md:text-2xl xl:text-4xl;
 }
 .responive-heading-text{
-  @apply text-xl md:text-3xl font-medium xl:text-5xl;
+  @apply text-base md:text-lg font-medium xl:text-2xl;
 }
 
 /**----------------------
   **      About Section
   *------------------------**/
   .about-h2{
-    @apply text-xl font-semibold;
+    @apply text-xl font-semibold mb-4;
   }
 
   /**----------------------
   **      Tech
   *------------------------**/
   .tech{
-    @apply grid grid-cols-2 grid-rows-3 gap-y-2 gap-x-1 mx-[8vw]   sm:grid-cols-3 sm:grid-rows-2 ;
+    @apply grid grid-cols-2 grid-rows-[auto] gap-y-2 gap-x-1 mx-[auto]   sm:grid-cols-3  sm:gap-2 md:grid-cols-4 lg:grid-cols-6 lg:mr-24 xl:grid-cols-6 xl:mr-[auto];
   }
   .tech-container{
-    @apply flex flex-col items-center w-[6.5rem] h-[6.5rem] border-2 border-solid border-flame-light-500 rounded-md text-wrap p-2.5 sm:w-32 sm:h-32;
+    @apply flex flex-col items-center w-[6.5rem] h-[6.5rem] border-2 border-solid border-flame-light-500 rounded-md text-wrap p-2.5 sm:w-32 sm:h-32 lg:w-[6.5rem] lg:h-[6.5rem];
   }
   .tech-name{
     @apply text-lg font-normal mb-2 leading-5;
@@ -124,30 +124,42 @@
   /**----------------------
    **      School
    *------------------------**/
-
-
-/**----------------------
-  **      Media Screens
-  *------------------------**/
-   @media screen and (min-width: 640px) {
-    /* .tech{
-      @apply ml-[15vw] mr-[35vw];
-    } */
-    /* .xpadding{
-      @apply ml-[3rem];
-    } */
+  .school-container{
+    @apply border-2 border-solid pb-2 flex flex-col items-center text-center mb-6 rounded-lg sm:max-w-[75%] mx-[auto] lg:h-52 lg:flex-row justify-center;
    }
-   @media screen and (min-width: 768px) {
-
-   }
-   @media screen and (min-width: 1024px) {
-     
-   }
-   @media screen and (min-width: 1280px) {
-     /* .my-image{
-      @apply w-1/2;
-     } */
-   }
-   @media screen and (min-width: 1536px) {
-
-   }
+    /* School info */
+  .school-image{
+      @apply object-cover w-[250px]  h-[150px] aspect-auto rounded-xl mx-auto ;
+  }
+  .border{
+      @apply border-2 rounded-2xl  p-1 md:flex flex-col md:justify-between md:p-2 mb-8 lg:flex-row;
+  }
+  .school-text-div{
+      @apply text-center my-auto pr-2;
+  }
+  .school-text-title{
+      @apply bg-gradient-to-b  bg-clip-text text-transparent  text-4xl  font-medium  lg:text-5xl;
+  }
+  .school-grad-date{
+      @apply text-base md:text-xl;
+  }
+  /* Full Sail */
+  #FS {
+    @apply border-flame-light-400 text-flame-light-500;
+  }
+  .Fullsail-school-text-title{
+      @apply  from-flame-dark-300  to-flame-dark-100 ;
+  }
+  .Fullsail-school-grad-date{
+      @apply text-flame-light-400 ;
+  }
+  /* Marion */
+  #Marion{
+    @apply border-tekhelet-light-500;
+  }
+  .marion-school-text-title{
+      @apply from-tekhelet-dark-300  to-tekhelet-light-500 ;
+  }
+  .marion-school-grad-date{
+      @apply text-tekhelet-light-400;
+  }

@@ -6,6 +6,8 @@ import { getSkills } from "@/sanity/sanity-utils";
 import skill from "@/sanity/schemas/skill-schema";
 import { FaReact } from "react-icons/fa6";
 import { SiJavascript, SiSanity, SiSass, SiTailwindcss, SiTypescript } from "react-icons/si";
+import Fullsail from '../assets/Fullsail.jpg'
+import Marion from '../assets/Marion.jpg'
 
 export default async function Home() {
   
@@ -47,9 +49,36 @@ export default async function Home() {
             <SiSanity className="tech-lcon"/>
           </div>
         </div>
+
         <br/>
-        <div className="school">
+
+        <div className="schools">
           <h2 className="about-h2">Schools Attended</h2>
+
+         {/* Marion Co High School */}
+        <div className="marion-school-border border" id="Marion">
+           <div className=''>
+            <Image src={Marion} alt="Marion County High School"  className='school-image' />
+          </div>
+          <div className='marion-school-text-div school-text-div'>
+            <h2 className='marion-school-text-title school-text-title'>Marion County High School</h2>
+            <p className="marion-school-grad-date school-grad-date">May 25, 2013</p>
+          </div>
+        </div>
+
+        {/* Full Sail UNiversity */}
+        <div className="Fullsail-school-border border" id="FS">
+          <div className=''>
+            <Image src={Fullsail} alt="Full Sail University Logo"  className='school-image' />
+          </div>
+
+          <div className='Fullsail-school-text-div school-text-div'>
+            <h2 className='Fullsail-school-text-title school-text-title'>Full Sail University</h2>
+            <p className='responsive-p-text Fullsail-school-p-text '>Associate of Science in Web Development</p>
+            <p className="Fullsail-school-grad-date school-grad-date">April 05, 2024</p>
+          </div>
+        </div>
+
         </div>
       </div>
 
