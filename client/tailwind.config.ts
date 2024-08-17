@@ -22,7 +22,7 @@ const config: Config = {
         '5xl': '2560px',
         '6xl': '2880px',
         '7xl': '5120px',
-      }
+      },
     },
     colors:{
       transparent: 'transparent',

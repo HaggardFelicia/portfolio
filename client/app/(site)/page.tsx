@@ -78,7 +78,6 @@ export default async function Home() {
             <p className="Fullsail-school-grad-date school-grad-date">April 05, 2024</p>
           </div>
         </div>
-
         </div>
       </div>
 

@@ -39,7 +39,7 @@
   @apply flex justify-between;
  }
 .links-container{
-  @apply flex items-center fixed gap-2 sm:gap-5 2xl:gap-8 right-8 top-10 sm:right-20 xl:right-36 3xl:right-48 4xl:right-64 z-50 px-4 py-1 rounded-full bg-flame-light-100 shadow-inset shadow-flame-dark-100;
+  @apply flex items-center  gap-2 sm:gap-5 2xl:gap-8 right-8 top-10 sm:right-20 xl:right-36 3xl:right-48 4xl:right-64 z-50 px-4 py-1 rounded-full ;
 }
 .header-links:hover{
   @apply text-flame-light-500 ;
@@ -49,14 +49,17 @@
   **      Footer
   *------------------------**/
 .footer{
-  @apply bg-tekhelet-light-300 text-flame-light-500 bottom-0 w-full items-center justify-center text-center font-Nunito-italic text-sm py-6 mt-[auto] h-28 tracking-tighter; 
+  @apply bg-tekhelet-light-300  w-5 rounded-2xl fixed top-44 right-2 flex flex-col sm:right-4 sm:w-6 md:right-8 md:w-8 2xl:w-12 2xl:right-10 2xl:rounded-3xl 2xl:top-72; 
 }
 .footer-links{
-  @apply text-flame-dark-200 items-center justify-center aspect-square gap-5 h-6;
+  @apply text-flame-dark-200 align-middle justify-center  items-center -right-[3px] relative text-sm sm:-right-[4px] sm:text-base md:text-xl md:-right-[5px] 2xl:text-3xl 2xl:-right-[8px];
 }
 .footer-links-container{
-  @apply justify-center flex my-5 gap-5;
+  @apply justify-center  my-3 md:my-4 2xl:my-6;
       /* gap: 1.25rem; */
+}
+.break{
+  @apply my-2;
 }
 
 /**----------------------
@@ -76,23 +79,23 @@
   @apply block items-center text-center my-[auto] w-full mb-20 md:block mx-[auto] justify-center lg:flex;
  }
  .my-image{
-  @apply w-[200px]  my-4 lg:mb-14 rounded-br-2xl  relative mx-[auto] md:w-7/12 lg:w-1/3 2xl:-right-20;
+  @apply w-[200px]  my-4 lg:mb-14 rounded-br-2xl  relative mx-[auto] md:w-7/12 lg:w-1/2 lg:-right-8 3xl:w-[45%] 3xl:-right-32;
  }
 
 /**----------------------
  **      Text
  *------------------------**/
 .responsive-logo{
-  @apply    bg-gradient-to-tl from-tekhelet-dark-500  via-tekhelet-dark-200 to-tekhelet-light-300 bg-clip-text  text-lg text-transparent font-bold font-Sofia sm:text-2xl md:text-3xl xl:text-5xl;
+  @apply    bg-gradient-to-tl from-tekhelet-dark-500  via-tekhelet-dark-200 to-tekhelet-light-300 bg-clip-text  text-lg text-transparent font-bold font-Sofia sm:text-2xl md:text-3xl xl:text-5xl 3xl:text-7xl;
 }
 .header-links{
-  @apply bg-gradient-to-l from-tekhelet-dark-300  via-flame-light-500 to-flame-dark-300 bg-clip-text font-bold text-base text-transparent sm:text-lg md:text-xl xl:text-3xl;  
+  @apply bg-gradient-to-l from-tekhelet-dark-300  via-flame-light-500 to-flame-dark-300 bg-clip-text font-bold text-base text-transparent sm:text-lg md:text-xl xl:text-3xl 3xl:text-5xl;  
 }
 .responsive-special-text{
-  @apply bg-gradient-to-tl from-tekhelet-dark-500  via-tekhelet-dark-200 to-tekhelet-light-300   bg-clip-text text-lg text-transparent font-bold sm:text-xl md:text-2xl xl:text-4xl;
+  @apply bg-gradient-to-tl from-tekhelet-dark-500  via-tekhelet-dark-200 to-tekhelet-light-300   bg-clip-text text-lg text-transparent font-bold sm:text-xl md:text-2xl xl:text-4xl 3xl:text-6xl;
 }
 .responive-heading-text{
-  @apply text-base md:text-lg font-medium xl:text-2xl;
+  @apply text-base md:text-lg font-medium xl:text-2xl 3xl:text-4xl;
 }
 
 /**----------------------
@@ -106,10 +109,10 @@
   **      Tech
   *------------------------**/
   .tech{
-    @apply grid grid-cols-2 grid-rows-[auto] gap-y-2 gap-x-1 mx-[auto]   sm:grid-cols-3  sm:gap-2 md:grid-cols-4 lg:grid-cols-6 lg:mr-24 xl:grid-cols-6 xl:mr-[auto];
+    @apply grid grid-cols-2 grid-rows-[auto] gap-y-2 sm:gap-3   mx-[auto]   items-center sm:grid-cols-3   md:mx-12 lg:grid-cols-6  lg:gap-x-16 lg:ml-8 lg:mr-16 xl:grid-cols-6 xl:mx-28 2xl:mx-24 ;
   }
   .tech-container{
-    @apply flex flex-col items-center w-[6.5rem] h-[6.5rem] border-2 border-solid border-flame-light-500 rounded-md text-wrap p-2.5 sm:w-32 sm:h-32 lg:w-[6.5rem] lg:h-[6.5rem];
+    @apply flex flex-col items-center w-[5.5rem] h-[5.5rem] border-2 border-solid border-flame-light-500 rounded-md text-wrap p-2.5 sm:w-[7.5rem] sm:h-[7.5rem] lg:w-[6.5rem] lg:h-[6.5rem] 2xl:w-32 2xl:h-32 3xl:w-36 3xl:h-36;
   }
   .tech-name{
     @apply text-lg font-normal mb-2 leading-5;
@@ -124,28 +127,31 @@
   /**----------------------
    **      School
    *------------------------**/
-  .school-container{
-    @apply border-2 border-solid pb-2 flex flex-col items-center text-center mb-6 rounded-lg sm:max-w-[75%] mx-[auto] lg:h-52 lg:flex-row justify-center;
-   }
     /* School info */
   .school-image{
-      @apply object-cover w-[250px]  h-[150px] aspect-auto rounded-xl mx-auto ;
+      @apply object-cover w-[215px]  h-[125px] aspect-auto rounded-xl mx-auto sm:w-[410px] sm:h-[310px] lg:max-w-[300px] lg:h-36;
   }
   .border{
-      @apply border-2 rounded-2xl  p-1 md:flex flex-col md:justify-between md:p-2 mb-8 lg:flex-row;
+      @apply border-2 rounded-2xl  p-1 mb-8 w-[220px] items-center mx-[auto]  sm:w-[425px] lg:flex lg:flex-row lg:w-[80%] xl:w-[70%];
   }
   .school-text-div{
-      @apply text-center my-auto pr-2;
+      @apply text-center mx-auto  lg:text-right  lg:p-1 xl:text-right 2xl:text-right 3xl:text-right ;
   }
   .school-text-title{
-      @apply bg-gradient-to-b  bg-clip-text text-transparent  text-4xl  font-medium  lg:text-5xl;
+      @apply bg-gradient-to-b  bg-clip-text text-transparent  text-4xl  font-medium  2xl:text-5xl;
   }
   .school-grad-date{
       @apply text-base md:text-xl;
   }
   /* Full Sail */
   #FS {
-    @apply border-flame-light-400 text-flame-light-500;
+    @apply border-flame-light-400 text-flame-light-500 ;
+  }
+  #FS .school-image{
+    @apply lg:h-40;
+  }
+  #FS .school-text-div{
+    @apply xl:ml-28 2xl:ml-28 3xl:ml-72;
   }
   .Fullsail-school-text-title{
       @apply  from-flame-dark-300  to-flame-dark-100 ;
@@ -156,6 +162,9 @@
   /* Marion */
   #Marion{
     @apply border-tekhelet-light-500;
+  }
+  #Marion .school-text-div{
+    @apply xl:ml-28 2xl:ml-20 2xl:pr-3 3xl:ml-32;
   }
   .marion-school-text-title{
       @apply from-tekhelet-dark-300  to-tekhelet-light-500 ;
